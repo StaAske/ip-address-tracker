@@ -31,7 +31,7 @@ body{
   border: none;
   border-radius: 0 8px 8px 0;
   background-color: black;
-  margin-left: -5px;
+  margin-left: -4px;
 }
 
 .goBtn:hover{
@@ -95,3 +95,40 @@ body{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 768px) {
+  .h1{
+    font-size: 1.5em;
+  }
+  .input{
+    font-size: .8rem;
+    padding: 9px 14px;
+    width: 350px;
+  }
+  .goBtn {
+    padding: 8px 14px;
+    
+  }
+  .bg-img {
+    height: 150px;
+  }
+  .search-form{
+    margin: 1em;
+  }
+  .tab{
+    width: 90%;
+    padding: .9em;
+    margin-top: 95px;
+  }
+  .tab > .tab-child{
+   margin-left: .9em;
+  }
+  .min-sec{
+    font-size: .6em;
+    font-weight: 500;
+  }
+
+  .indexes{
+    font-size: .9em;
+  }
+}
