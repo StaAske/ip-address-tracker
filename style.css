@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.bg-img{
+  background-image: url("./images/pattern-bg.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1.5em;
+
+}
+
+.input{
+  
+}
+
+.container > *{
+  margin: 0 auto;
+
+}
+
+.h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
