@@ -15,16 +15,75 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 1.5em;
-
+  height: 200px;
 }
 
 .input{
-  
+  background-color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  width: 450px;
 }
 
-.container > *{
-  margin: 0 auto;
+.goBtn{
+  padding: 10px 16px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  background-color: black;
+  margin-left: -5px;
+}
 
+.goBtn:hover{
+  background-color: #3f3f3f;
+  cursor: pointer;
+}
+.container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-form{
+  margin: 1.5em;
+}
+
+.tab{
+  width: 700px;
+  display: flex;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  position: absolute;
+  margin-top: 125px;
+}
+
+.tab > .tab-child:not(:last-child){
+  border-right: 1px solid black;
+  border-color: hsl(0, 0%, 59%);
+}
+.tab > .tab-child{
+ margin-left: 1em;
+}
+
+.tab-child{
+  width: 25%;
+  justify-content: space-around;
+}
+
+.min-sec{
+  color: hsl(0, 0%, 59%);
+  font-size: .7em;
+  font-weight: 500;
+}
+
+.indexes{
+  font-weight: 700;
+  font-size: 1.1em;
 }
 
 .h1 {

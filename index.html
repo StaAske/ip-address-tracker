@@ -18,26 +18,32 @@
 
       <div class="h1">IP Address Tracker</div>
 
-      <input type="text" class="input" placeholder="Search for any IP address or domain"  value="">
+      <form class="search-form " action="index.html" method="post">
+        <input type="text" class="input" placeholder="Search for any IP address or domain"  value="">
 
-      <button type="button" name="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
-          <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/>
-        </svg>
-      </button>
+        <button class="goBtn" type="button" name="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/>
+          </svg>
+        </button>
+      </form>
 
       <div class="tab">
-        <div class="">
-          IP Address
+        <div class="tab-child">
+          <span class="min-sec">IP Address</span>
+          <div class="indexes">192.12.456.1</div>
         </div>
-        <div class="">
-          Location
+        <div class="tab-child">
+          <span class="min-sec">Location</span>
+          <div class="indexes">Bishkek, Kyrgyzstan</div>
         </div>
-        <div class="">
-          Timezone
+        <div class="tab-child">
+          <span class="min-sec">Timezone</span>
+          <div class="indexes">UTC-06:00</div>
         </div>
-        <div class="">
-          ISP
+        <div class="tab-child">
+          <span class="min-sec">ISP</span>
+          <div class="indexes">SpaceX Starlink</div>
         </div>
       </div>
 
