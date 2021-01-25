@@ -154,6 +154,7 @@ body{
   }
   .goBtn{
     margin-left: -43px;
+    display: inline;
   }
   .tab{
     margin-top: 20vh;
@@ -186,7 +187,8 @@ body{
     margin-left: 0em;
   }
   .goBtn{
-    margin-left: -44px;
+    display: inline;
+    margin-left: -43px;
   }
   .indexes {
     font-size: .8em;
