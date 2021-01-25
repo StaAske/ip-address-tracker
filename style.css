@@ -187,8 +187,11 @@ body{
     margin-left: 0em;
   }
   .goBtn{
-    display: inline;
-    margin-left: -43px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 5px;
   }
   .indexes {
     font-size: .8em;
