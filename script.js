@@ -38,7 +38,7 @@ $(document).ready(function(){
         defGeoloc(json.location.lat, json.location.lng);
       })
       .fail(function(){
-        alert(newIP + "is invalid ip address.")
+        alert(newIP + " is invalid ip address.")
       });
 
   };
