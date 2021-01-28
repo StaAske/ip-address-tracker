@@ -35,7 +35,7 @@ $(document).ready(function(){
         $('.current-isp').text(json.isp);
 
         $('.map-block').html("<div id='mapid'></div>");
-        defGeoloc(json.location.lat, json.location.lng);
+        setGeoloc(json.location.lat, json.location.lng);
       })
       .fail(function(){
         alert(newIP + " is invalid ip address.")
@@ -46,13 +46,18 @@ $(document).ready(function(){
 
 
 
-  function defGeoloc(latitude, longitude) {
+  function setGeoloc(latitude, longitude) {
 
-    const mymap = L.map('mapid').setView([latitude, longitude], 13);
+    const mymap = L.map('mapid', {zoomControl: false}).setView([latitude, longitude], 13);
+
+    L.control.zoom({position: 'bottomright'}).addTo(mymap);
 
     const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     const tileAttribution = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
     L.tileLayer(tileUrl, { tileAttribution }).addTo(mymap);
+
+    const marker = L.marker([latitude, longitude]).addTo(mymap);
+
 
   };
 
